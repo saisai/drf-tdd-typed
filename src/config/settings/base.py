@@ -125,10 +125,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/vol/web/static'
+STATIC_ROOT = '/src/static'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/vol/web/media'
+MEDIA_ROOT = '/src/media'
+
+UPLOAD_TO_AUTHOR_AVATAR = 'src/static/images/author/avatar/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
