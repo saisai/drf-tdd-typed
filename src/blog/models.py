@@ -3,7 +3,7 @@ from django.conf import settings
 from core.models import BaseModel, User, generate_uuid_for_file_with_dir
 
 
-def generate_uuid_for_author_avatar(instance, original_file_name):
+def generate_uuid_for_author_avatar(_, original_file_name: str):
     return generate_uuid_for_file_with_dir(original_file_name, settings.UPLOAD_TO_AUTHOR_AVATAR)
 
 
